@@ -11,8 +11,8 @@ app.use(express.urlencoded({ extended:false}));
 app.use(express.json());
 app.use(express.static("app/public"));
 //Router
-require("app/routing/apiRoutes")(app);
-require("app/routing/htmlRoutes")(app);
+require("app/routing/apiRoutes.js")(app);
+require("app/routing/htmlRoutes.js")(app);
 
 
 //Listner
